@@ -159,7 +159,7 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | Name                             | Command                                                                 |
 |----------------------------------+-------------------------------------------------------------------------|
 | List secrets                     | =kubectl get secrets --all-namespaces=                                  |
-| Generate secret                  | =echo -n 'mypasswd', then redirect to base64 --decode=                  |
+| Generate secret                  | =echo -n 'mypasswd'  | base64=                                          |
 | Get secret                       | =kubectl get secret denny-cluster-kubeconfig=                           |
 | Get a specific field of a secret | kubectl get secret denny-cluster-kubeconfig -o jsonpath="{.data.value}" |
 | Create secret from cfg file      | kubectl create secret generic db-user-pass --from-file=./username.txt   |
